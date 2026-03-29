@@ -1,5 +1,7 @@
 import { Header } from "@/components/common/Header";
 import { Footer } from "@/components/common/Footer";
+import { Toaster } from "@/components/ui/sonner";
+
 
 
 
@@ -11,6 +13,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
       </main>
             <Footer />
+            <Toaster />
     </div>
   );
 }
