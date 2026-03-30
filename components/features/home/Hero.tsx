@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail} from "lucide-react";
 import { Section } from "@/components/common/Section";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export function Hero() {
   
@@ -34,12 +35,12 @@ export function Hero() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-25">
 
                 {/* Image Left */}
-                <div className="flex justify-center items-center">
-                    <img
+                <div className="flex justify-center items-center ">
+                    <Image
                         src="/Edwin.jpg"
                         alt="Edwin Angoring Jr"
-                        width={500}
-                        height={500}
+                        width={600}
+                        height={600}
                         className="rounded-2xl shadow-2xl object-cover w-full max-w-[400px] aspect-square transform rotate-3 hover:rotate-0 transition-transform duration-500"
                     />
                 </div>

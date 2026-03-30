@@ -33,12 +33,13 @@ export default function BlogPage() {
                     src={post.coverImage}
                     alt={post.title}
                     fill
+                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 ) : (
                   /* Fallback gradient placeholder when no image is provided */
                   <div className="w-full h-full bg-gradient-to-br from-muted to-muted-foreground/20 flex items-center justify-center">
-                    <span className="text-4xl opacity-30">✍️</span>
+                    <span className="text-4xl opacity-30"></span>
                   </div>
                 )}
               </div>

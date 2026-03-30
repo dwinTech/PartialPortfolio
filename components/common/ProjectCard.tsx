@@ -1,6 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 
 
 
@@ -26,9 +26,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="text-muted-foreground font-medium flex flex-col items-center gap-2">
           <div className="rounded-full bg-background/50 backdrop-blur-sm">
 
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={600}
+              height={400}
               className="w-full h-full object-cover"
             />
           </div>

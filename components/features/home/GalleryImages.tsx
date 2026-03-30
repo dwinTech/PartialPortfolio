@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/features/home/SectionHeader";
 import { images } from "@/constants/galleryImages"
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import Image from "next/image";
 
 
 
@@ -57,9 +58,11 @@ export function GalleryImages() {
                 className="flex-1 aspect-[3/4] overflow-hidden rounded-sm border
                   border-gray-200 dark:border-gray-700 cursor-pointer group"
               >
-                <img
+                <Image
                   src={img.src}
                   alt={img.alt}
+                  width={600}
+                  height={600}
                   className="w-full h-full object-cover group-hover:scale-105
                     transition-transform duration-300"
                 />
@@ -114,7 +117,7 @@ export function GalleryImages() {
               <X className="h-6 w-6" />
             </button>
 
-            <img
+            <Image
               src={images[modalIndex].src}
               alt={images[modalIndex].alt}
               className="w-full max-h-[80vh] object-contain rounded-sm"

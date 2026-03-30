@@ -1,5 +1,6 @@
 "use client";
 
+
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
@@ -53,7 +54,7 @@ export function Header() {
         {/* Logo / Name */}
         <div className="flex flex-col leading-tight">
           <span className="font-bold text-sm text-foreground">Edwin Angoring</span>
-          <span className="text-xs text-muted-foreground">IT Support</span>
+          <span className="text-xs text-muted-foreground">IT Student</span>
         </div>
 
          {/* Desktop Nav */}
