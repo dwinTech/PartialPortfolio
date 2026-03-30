@@ -8,9 +8,9 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 
 export default function BlogPage() {
   return (
-    <Section className="py-12">
+    <Section className="pt-20 sm:pt-24 md:pt-28 lg:pt-32 py-12">
       {/* Header */}
-      <div className="mb-10 space-y-2">
+      <div className="mb-10 space-y-2 mt-15">
         <h1 className="text-4xl font-extrabold tracking-tight">Blog</h1>
         <p className="text-muted-foreground text-lg">Thoughts, tutorials.</p>
       </div>

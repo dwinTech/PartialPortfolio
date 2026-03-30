@@ -11,13 +11,13 @@ interface BlogPostContentProps {
 export function BlogPostContent({ post }: BlogPostContentProps) {
   return (
     <Section className="py-12">
-      <Link 
-        href="/blog" 
-        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-8 transition-colors"
-      >
-        <ArrowLeft size={16} />
-        Back to Blog
-      </Link>
+     <Link
+  href="/blog"
+  className="mt-20 flex items-center gap-2 text-blue-600 hover:underline"
+>
+  <ArrowLeft size={16} />
+  <span>Back to Blog</span>
+</Link>
 
       <div className="space-y-4 mb-8">
         <div className="flex gap-2">

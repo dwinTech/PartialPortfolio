@@ -17,15 +17,15 @@ export function BlogCategoryContent({
   mainCategory,
 }: BlogCategoryContentProps) {
   return (
-    <Section className="py-12">
-      <Link
-        href="/blog"
-        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-8 transition-colors"
-      >
-        <ArrowLeft size={16} />
-        Back to Blog
-      </Link>
-
+   <Section className="mt-12 sm:mt-16 md:mt-20 lg:mt-24 py-12">
+      
+<Link
+  href="/blog"
+  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mt-6 sm:mt-8 md:mt-10 mb-8 transition-colors"
+>
+  <ArrowLeft size={16} />
+  Back to Blog
+</Link>
       <div className="flex flex-col gap-4 mb-12">
         <h1 className="text-4xl font-bold capitalize">
           Category: {activeCategories.join(" / ")}
