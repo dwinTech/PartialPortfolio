@@ -27,7 +27,7 @@ export function AboutHero() {
   }, [charIndex]);
 
   return (
-    <Section className="relative min-h-screen flex items-center justify-center px-4 py-12">
+    <Section className="relative flex items-start justify-center px-5 pt-10 mt-25 pb-4">
 
       {/* ── TWO COLUMN WRAPPER ── */}
       <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 lg:gap-12 w-full max-w-5xl">
@@ -35,7 +35,7 @@ export function AboutHero() {
         {/* ── LEFT COLUMN ── */}
         <div className="flex flex-col items-center gap-5">
 
-          {/* Profile Image — smaller on mobile */}
+          {/* Profile Image */}
           <Image
             src="/Edwin.jpg"
             alt="Profile"
@@ -59,19 +59,19 @@ export function AboutHero() {
                 <span className="text-xs">LinkedIn</span>
               </Link>
 
-              <Link href="https://github.com" target="_blank"
+              <Link href="https://github.com/dwinTech/PartialPortfolio" target="_blank"
                 className="flex flex-col items-center hover:text-gray-400 transition">
                 <Github className="h-4 w-4 sm:h-5 sm:w-5 mb-1" />
                 <span className="text-xs">GitHub</span>
               </Link>
 
-              <Link href="https://instagram.com" target="_blank"
+              <Link href="https://www.instagram.com/edwinangoring/" target="_blank"
                 className="flex flex-col items-center hover:text-pink-400 transition">
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5 mb-1" />
                 <span className="text-xs">Instagram</span>
               </Link>
 
-              <Link href="https://facebook.com" target="_blank"
+              <Link href="https://www.facebook.com/edwingangoringjr" target="_blank"
                 className="flex flex-col items-center hover:text-blue-600 transition">
                 <Facebook className="h-4 w-4 sm:h-5 sm:w-5 mb-1" />
                 <span className="text-xs">Facebook</span>
@@ -81,7 +81,7 @@ export function AboutHero() {
         </div>
 
         {/* ── RIGHT COLUMN ── */}
-        <div className="flex flex-col gap-5 justify-center items-center lg:items-start text-center lg:text-left">
+        <div className="flex flex-col gap-4 justify-start items-center lg:items-start text-center lg:text-left">
 
           {/* Name */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter min-h-[1.2em]">
@@ -115,9 +115,9 @@ export function AboutHero() {
           <div className={`flex justify-center lg:justify-start transition-all duration-700 ${
             done ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
           }`}>
-            <Button size="lg" asChild>
+            <Button size="sm" asChild>
               <Link href="/My-Resume.png" download>
-                <Download className="mr-2 h-4 w-4" />
+                <Download className="mr-1.5 h-3.5 w-3.5" />
                 Download Resume
               </Link>
             </Button>

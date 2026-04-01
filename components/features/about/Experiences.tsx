@@ -11,13 +11,11 @@ export function Experiences() {
   const [showAllSkills, setShowAllSkills] = useState(false);
 
   return (
-    <Section className="rounded-lg py-10">
+    <Section className="rounded-lg pt-4 pb-10">
       <div className="px-6 lg:px-20">
 
-        
         <div className="grid md:grid-cols-2 gap-16 items-start">
 
-         
           <div>
             <SectionHeading
               title="Skills & Technologies"

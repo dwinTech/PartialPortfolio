@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail} from "lucide-react";
+import { ArrowRight, Github, Linkedin,Mail, Facebook} from "lucide-react";
 import { Section } from "@/components/common/Section";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -108,10 +108,10 @@ export function Hero() {
                             <span className="sr-only">LinkedIn</span>
                         </Link>
 
-                        <Link href=""
+                        <Link href="https://www.facebook.com/edwingangoringjr"
                             className="hover:text-foreground hover:scale-110 transform transition-all duration-200">
-                            <Mail className="h-6 w-6" />
-                            <span className="sr-only">Email</span>
+                            <Facebook className="h-6 w-6" />
+                            <span className="sr-only">Facebook</span>
                         </Link>
                         
                     </div>
